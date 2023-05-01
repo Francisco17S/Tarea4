@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones matematicas java</title>
+</head>
+<script type="text/javascript">
+    let screen1, screen2, variable1, variable2; contador=1;
+    screen1=prompt ("Ingrese un número");
+    variable1= parseInt (variable1)
+    screen2=prompt("Ingrese el segundo número");
+    variable2= parseInt (variable2)
+    alert("A continuación se mostrarán 5 iteraciones con la suma, la resta, la multiplicación, la división y el mood(resto) entre ambos números respectivamente...");
+    do{
+
+        if (contador==1){
+            var plus= parseInt(screen1) + parseInt(screen2);
+            alert("El resultado de la suma es: " + plus);
+            contador++;
+           
+        }
+        
+        if (contador==2){
+            var less= parseInt(screen1) - parseInt(screen2);
+            alert("El resultado de la resta es: " + less);
+            contador++;
+            
+        }
+        
+        if (contador==3){
+            var mul= parseInt(screen1) * parseInt(screen2);
+            alert("El resultado de la multiplicación es: " + mul);
+            contador++;
+        }
+        
+        if (contador==4){
+            var divi= parseInt(screen1) / parseInt(screen2);
+            alert ("El resultado de la división es: " + divi);
+            contador++;
+            
+        }
+        
+        if (contador==5){
+            var mood= parseInt(screen1) % parseInt(screen2);
+            alert("El resultado del mood es: " + mood);
+            contador++;
+        }
+    } while (contador<6);
+    
+        
+</script>
+</html>
